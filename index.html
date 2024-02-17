@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundMe</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+           <p>fundMe</p>
+        </div>
+            <div class="buttons-container">
+                <nav class="links-container">
+                    <ul>
+                        <li><a href="https://twitter.com/b4b0y4" target="_blank">twitter</a></li>
+                        <li><a href="https://github.com/b4b0y4" target="_blank">github</a></li>
+                    </ul>
+                </nav>
+                <button class="mode-button" data-theme-toggle>&#9680;</button>
+                <div class="connect-container">
+                    <button class="connect-button" id="connectButton">Connect Wallet</button>
+                </div>
+                <div class="warning-modal" id="warningModal">
+                    <div class="modal">
+                        <p>Wrong Network!!</p>
+                        <button class="modal-button" id="modalButton">Switch Now</button>
+                    </div>
+                </div>
+                <button class="burger-menu-button">&#9776;</button>
+                <div class="panel" id="panel">
+                    <nav class="panel-container">
+                        <ul>
+                            <li><a href="https://twitter.com/b4b0y4" target="_blank">twitter</a></li>
+                            <li><a href="https://github.com/b4b0y4" target="_blank">github</a></li>
+                        </ul>
+                    </nav>
+                    <button class="close-button">&#215;</button>
+                </div>
+            </div> 
+    <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main>
+        <div class="master-container">
+            <div class="description-container">
+                <p>My fundMe app contain <span class="balance"></span> SepoliaETH.</p>
+                <p>Thanks for your donation!</p>
+            </div>
+            <div class="form-container">
+                 <label for="ethAmount"></label>
+                <input id="ethAmount" placeholder="0.1 ETH" />
+                <button type="button" id="fundButton" class="fund-button">Fund</button>
+            </div>
+            <div class="withdraw-container">
+                <button class="withdraw-button" id="withdrawButton">Withdraw</button>
+            </div>
+            <div class="contract-container">
+                <h2>Verified smart contract:</h2>
+                <p>0x4D05a5a955Df8ee20c8C767064C3199481c1eb66</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <p>fundMe ☻</p>
+    </footer>
+
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/connectivity.js" type="module"></script>
+    <script src="./js/burger.js" type="module"></script>
+    <script src="./js/theme.js" type="module"></script>
+
+</body>
+</html>
