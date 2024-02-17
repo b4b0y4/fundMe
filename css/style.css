@@ -284,9 +284,7 @@ footer {
     }
 
     .panel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
         position: fixed;
         top: 0;
         right: -100%;
@@ -303,8 +301,10 @@ footer {
     }
 
     .panel-container {
-        text-align: center;
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 80px;
     }
 
     .close-button {
