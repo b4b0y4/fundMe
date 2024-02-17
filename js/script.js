@@ -41,7 +41,7 @@ async function fund() {
   } else {
     fundButton.innerHTML = "Install a Wallet"
     setTimeout(() => {
-      connectButton.innerHTML = "Connect Wallet"
+      fundButton.innerHTML = "Fund"
     }, 2000)
   }
 }
@@ -63,7 +63,7 @@ async function withdraw() {
     } else {
       withdrawButton.innerHTML = "Install a Wallet"
       setTimeout(() => {
-        connectButton.innerHTML = "Connect Wallet"
+        withdrawButton.innerHTML = "Withdraw"
       }, 2000)
     }
   }
