@@ -142,6 +142,13 @@ main {
     width: 100%;
 }
 
+.balance {
+    color: var(--color-btn);
+    background-color: var(--color-2nd);
+    padding: 5px;
+    border-radius: 20px;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
