@@ -39,8 +39,11 @@ async function fund() {
       console.log(error)
     }
   } else {
-    fundButton.innerHTML = "Please install a Wallet"
+    fundButton.innerHTML = "Install a Wallet"
   }
+  setTimeout(() => {
+    connectButton.innerHTML = "Connect Wallet"
+  }, 2000)
 }
 
 async function withdraw() {
@@ -58,8 +61,11 @@ async function withdraw() {
         console.log(error)
       }
     } else {
-      withdrawButton.innerHTML = "Please install a Wallet"
+      withdrawButton.innerHTML = "Install a Wallet"
     }
+    setTimeout(() => {
+      connectButton.innerHTML = "Connect Wallet"
+    }, 2000)
   }
   
 
