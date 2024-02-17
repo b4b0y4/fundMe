@@ -81,7 +81,7 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: color 0.3s ease-in-out, transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
@@ -118,7 +118,8 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-top: 10%;
 }
 
 .master-container {
@@ -153,7 +154,7 @@ main {
 input {
     width: 100px;
     padding: 10px;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-right: 20px;
     border: 2px solid var(--color-btn);
     background-color: var(--color-bg);
@@ -165,7 +166,7 @@ input {
   }
 
 .fund-button {
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 10px;
     width: 100%;
 }
@@ -180,9 +181,9 @@ input {
 }
 
 .withdraw-button {
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 10px;
-    width: 50%;
+    width: 80%;
 }
 
 .contract-container {
@@ -233,7 +234,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--color-btn);
-    margin: 15% auto;
+    margin: 200px auto;
     padding: 20px;
     border-radius: 10px;
     width: 200px;
@@ -328,10 +329,6 @@ footer {
     .master-container {
         max-width: 100%;
         margin: 0 10px;
-    }
-
-    .withdraw-button {
-        width: 80%;
     }
 
 }
