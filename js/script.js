@@ -40,10 +40,10 @@ async function fund() {
     }
   } else {
     fundButton.innerHTML = "Install a Wallet"
+    setTimeout(() => {
+      connectButton.innerHTML = "Connect Wallet"
+    }, 2000)
   }
-  setTimeout(() => {
-    connectButton.innerHTML = "Connect Wallet"
-  }, 2000)
 }
 
 async function withdraw() {
@@ -62,10 +62,10 @@ async function withdraw() {
       }
     } else {
       withdrawButton.innerHTML = "Install a Wallet"
+      setTimeout(() => {
+        connectButton.innerHTML = "Connect Wallet"
+      }, 2000)
     }
-    setTimeout(() => {
-      connectButton.innerHTML = "Connect Wallet"
-    }, 2000)
   }
   
 
