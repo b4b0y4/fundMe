@@ -32,8 +32,9 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
     localStorage.setItem("theme", newTheme)
     // Update theme based on new theme
     updateThemeOnHtmlEl({ theme: newTheme })
-  
+    
     // Update current theme setting
     currentThemeSetting = newTheme
+
   })
   
