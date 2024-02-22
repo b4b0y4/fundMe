@@ -3,6 +3,7 @@
     --color-txt: #282A34;
     --color-2nd: #E7E9EB;
     --color-btn: #A482F1;
+    --color-sdw: 40, 42, 52;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
     --color-txt: #DDDDDD;
     --color-2nd: #3A444C;
     --color-btn: #A482F1;
+    --color-sdw: 164, 130, 241;
 }
 
 body, html {
@@ -131,7 +133,7 @@ main {
     width: 400px;
     background-color: var(--color-2nd);
     border-radius: 20px;
-    box-shadow: 0 0 100px rgba(164, 130, 241, 0.5);
+    box-shadow: 0 0 100px rgba(var(--color-sdw), 0.5);
 }
 
 .description-container {
