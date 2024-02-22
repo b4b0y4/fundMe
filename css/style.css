@@ -79,7 +79,7 @@ button {
     font-weight: 800;
     padding: 10px 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -131,7 +131,7 @@ main {
     width: 400px;
     background-color: var(--color-2nd);
     border-radius: 20px;
-    box-shadow: 0 0 100px var(--color-btn);
+    box-shadow: 0 0 100px rgba(164, 130, 241, 0.5);
 }
 
 .description-container {
@@ -160,14 +160,15 @@ main {
 }
 
 input {
-    width: 100px;
+    width: 100%;
     font-size: 0.9em;
     margin-right: 20px;
     border: 2px solid var(--color-btn);
     background-color: var(--color-bg);
     color: var(--color-txt);
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 10px;
+    text-align: end;
+    padding-right: 10px;
     box-sizing: border-box;
     outline: none;
   }
@@ -175,7 +176,7 @@ input {
 .fund-button {
     font-size: 0.9em;
     padding: 10px;
-    width: 100%;
+    width: 150px;
 }
 
 .withdraw-container {
