@@ -150,18 +150,20 @@ async function fund() {
       const transactionResponse = await contract.fund({
         value: ethers.utils.parseEther(ethAmount),
       })
+      fundButton.innerHTML = "Funding..."
       await listenForTransactionMine(transactionResponse, provider)
       await getBalance()
       ethAmountInput.value = ""
     } catch (error) {
       console.log(error)
+      fundButton.innerHTML = "More!"
     }
   } else {
     fundButton.innerHTML = "Install a Wallet"
-    setTimeout(() => {
-      fundButton.innerHTML = "Fund"
-    }, 2000)
   }
+  setTimeout(() => {
+    fundButton.innerHTML = "Fund"
+  }, 2000)
 }
 
 async function withdraw() {
@@ -173,17 +175,19 @@ async function withdraw() {
     const contract = new ethers.Contract(contractAddress, abi, signer)
     try {
       const transactionResponse = await contract.withdraw()
+      withdrawButton.innerHTML = "Withdrawing..."
       await listenForTransactionMine(transactionResponse, provider)
       await getBalance()
     } catch (error) {
       console.log(error)
+      withdrawButton.innerHTML = "Not the Owner!"
     }
   } else {
     withdrawButton.innerHTML = "Install a Wallet"
-    setTimeout(() => {
-      withdrawButton.innerHTML = "Withdraw"
-    }, 2000)
   }
+  setTimeout(() => {
+    withdrawButton.innerHTML = "Withdraw"
+  }, 2000)
 }
 
 function listenForTransactionMine(transactionResponse, provider) {
@@ -198,4 +202,6 @@ function listenForTransactionMine(transactionResponse, provider) {
   })
 }
 
-getBalance()
+document.addEventListener("DOMContentLoaded", () => {
+  getBalance()
+})
